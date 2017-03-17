@@ -127,11 +127,13 @@ E:\UNITY\Lab\Lab\Temp\bin\Debug\UnityEditor.TreeEditor.dll
 E:\UNITY\Lab\Lab\Temp\bin\Debug\UnityEditor.UI.dll
 E:\UNITY\Lab\Lab\Temp\bin\Debug\UnityEditor.VR.dll
 E:\UNITY\Lab\Lab\Temp\bin\Debug\UnityEditor.WindowsStandalone.Extensions.dll
+E:\UNITY\Lab\Lab\Temp\bin\Debug\UnityEngine.Advertisements.dll
 E:\UNITY\Lab\Lab\Temp\bin\Debug\UnityEngine.Analytics.dll
 E:\UNITY\Lab\Lab\Temp\bin\Debug\UnityEngine.dll
 E:\UNITY\Lab\Lab\Temp\bin\Debug\UnityEngine.HoloLens.dll
 E:\UNITY\Lab\Lab\Temp\bin\Debug\UnityEngine.Networking.dll
 E:\UNITY\Lab\Lab\Temp\bin\Debug\UnityEngine.PlaymodeTestsRunner.dll
+E:\UNITY\Lab\Lab\Temp\bin\Debug\UnityEngine.Purchasing.dll
 E:\UNITY\Lab\Lab\Temp\bin\Debug\UnityEngine.UI.dll
 E:\UNITY\Lab\Lab\Temp\bin\Debug\UnityEngine.VR.dll
 E:\UNITY\Lab\Lab\Temp\bin\Debug\Mono.Cecil.dll
@@ -145,6 +147,7 @@ E:\UNITY\Lab\Lab\Temp\bin\Debug\Mono.Cecil.Pdb.dll
 E:\UNITY\Lab\Lab\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
 E:\UNITY\Lab\Lab\Temp\bin\Debug\UnityEngine.xml
 E:\UNITY\Lab\Lab\Temp\bin\Debug\UnityEditor.xml
+E:\UNITY\Lab\Lab\Temp\bin\Debug\UnityEngine.Advertisements.xml
 E:\UNITY\Lab\Lab\Temp\bin\Debug\UnityEditor.Advertisements.xml
 E:\UNITY\Lab\Lab\Temp\bin\Debug\nunit.framework.xml
 E:\UNITY\Lab\Lab\Temp\bin\Debug\UnityEditor.EditorTestsRunner.xml
@@ -159,6 +162,7 @@ E:\UNITY\Lab\Lab\Temp\bin\Debug\UnityEngine.Analytics.xml
 E:\UNITY\Lab\Lab\Temp\bin\Debug\UnityEditor.Analytics.xml
 E:\UNITY\Lab\Lab\Temp\bin\Debug\UnityEditor.HoloLens.xml
 E:\UNITY\Lab\Lab\Temp\bin\Debug\UnityEngine.HoloLens.xml
+E:\UNITY\Lab\Lab\Temp\bin\Debug\UnityEngine.Purchasing.xml
 E:\UNITY\Lab\Lab\Temp\bin\Debug\UnityEditor.VR.xml
 E:\UNITY\Lab\Lab\Temp\bin\Debug\UnityEngine.VR.xml
 E:\UNITY\Lab\Lab\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojResolveAssemblyReference.cache

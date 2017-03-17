@@ -6,7 +6,7 @@ public class DialogController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		this.gameObject.SetActive (false);
+		CloseDialog ();
 	}
 	
 	// Update is called once per frame
@@ -14,11 +14,11 @@ public class DialogController : MonoBehaviour {
 		
 	}
 
-	public void CloseDialog(){
+	public  void CloseDialog(){
 		this.gameObject.SetActive(false);
 	}
 
-	public void OpenDialog(){
+	public  void OpenDialog(){
 		this.gameObject.SetActive (true);
 	}
 }

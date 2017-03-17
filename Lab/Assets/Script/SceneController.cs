@@ -8,20 +8,30 @@ public class SceneController : MonoBehaviour {
 
 	public Text txtScore;
 	public Text txtAttack;
+	public Text txtLife;
 	public GameObject obtaclePrefab;
+	public GameObject moneyPrefab;
+	public GameObject ballPrefab;
 
 	// Use this for initialization
 	void Start () {
 		DoTestObatacle ();
+		CreateBall ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+		UpdateText ();	
 	}
 
-	int score = 0;
+	void UpdateText(){
+		txtScore.text = "Score : " + score.ToString ();
+		txtLife.text = "Life : " + life.ToString ();
+	}
+
+	public static int score = 0;
 	int attack = 0;
+	public static int life = 5;
 	public void DoPushButton(){
 		score++;
 		attack++;
@@ -29,20 +39,26 @@ public class SceneController : MonoBehaviour {
 		txtAttack.text = "Attack : " + attack.ToString ();
 	}
 
-	public void DoChangeSceneBack(){
+	public void DoChangeScene(){
 		SceneManager.LoadScene (1);
-	}
-	public void DoChangeSceneStart(){
-		SceneManager.LoadScene (0);
 	}
 	public void DoTestObatacle(){
 		StartCoroutine (GameProcess());
 	}
 
 	IEnumerator GameProcess(){
-		for (int i = 0; i <= 10; i++) {
-			Instantiate (obtaclePrefab);
-			yield return new WaitForSeconds (1);
+		for (int i = 0; i <= 15; i++) {
+			GameObject obtacle = Instantiate (obtaclePrefab);
+			float positionY = Random.Range (1.0f, 5.58f);
+			obtacle.transform.position = new Vector3 (5.58f ,positionY ,0 );
+
+			GameObject money = Instantiate (moneyPrefab);
+			money.transform.position = new Vector3 (5.65f, positionY + 0.5f+Random.Range (1.19f, 1.58f), 0);
+			yield return new WaitForSeconds (1.2f);
 		}
+	}
+
+	void CreateBall(){
+		Instantiate (ballPrefab).GetComponent<BallController>().SetDieCallBack(CreateBall);
 	}
 }

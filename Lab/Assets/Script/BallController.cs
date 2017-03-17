@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class BallController : MonoBehaviour {
 
@@ -34,9 +35,19 @@ public class BallController : MonoBehaviour {
 			Destroy (this.gameObject);
 		}*/
 	}
+
+	public void SetDieCallBack(System.Action callback){
+		dieCallBack = callback;
+	}
+	System.Action dieCallBack;
+
 	void OnDestroy() {
+		if (SceneController.life >= 0) {
+			SceneController.life--;
+		}
 		GameObject dieEffect = Instantiate(BallEffectDiePrefab);
 		dieEffect.transform.position = this.gameObject.transform.position;
+		dieCallBack ();
 	}
 }
 
